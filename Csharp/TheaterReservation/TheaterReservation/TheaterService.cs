@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System.Globalization;
+using System.Text;
 using TheaterReservation.Dao;
 using TheaterReservation.Data;
 
@@ -158,7 +159,7 @@ namespace TheaterReservation
 
             foreach (String foundSeat in foundSeats)
             {
-                decimal categoryRatio = seatsCategory[foundSeat].Equals("STANDARD") ? one : Convert.ToDecimal("1.5");
+                decimal categoryRatio = seatsCategory[foundSeat].Equals("STANDARD") ? one : Convert.ToDecimal("1.5", CultureInfo.InvariantCulture);
                 initialPrice = initialPrice + (myPrice*categoryRatio);
             }
 
@@ -173,7 +174,7 @@ namespace TheaterReservation
             if (isSubscribed)
             {
                 // apply a 25% discount when the user is subscribed
-                decimal removePercent = Math.Round(Convert.ToDecimal("0.175"),3, MidpointRounding.ToEven);
+                decimal removePercent = Math.Round(Convert.ToDecimal("0.175", CultureInfo.InvariantCulture), 3, MidpointRounding.ToEven);
                 totalBilling = (one -removePercent)* initialPrice;
             }
             decimal discountRatio = one - discountTime;

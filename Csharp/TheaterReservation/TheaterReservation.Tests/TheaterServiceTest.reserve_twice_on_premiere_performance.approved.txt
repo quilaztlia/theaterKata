@@ -28,5 +28,5 @@
 			</seat>
 		</seats>
 	<seatCategory>STANDARD</seatCategory>
-	<totalAmountDue>115.50€</totalAmountDue>
+	<totalAmountDue>115,50€</totalAmountDue>
 </reservation>

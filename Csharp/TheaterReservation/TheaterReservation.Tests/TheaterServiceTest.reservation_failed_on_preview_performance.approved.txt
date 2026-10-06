@@ -6,5 +6,5 @@
 	<reservationId>123459</reservationId>
 	<reservationStatus>ABORTED</reservationStatus>
 	<seatCategory>STANDARD</seatCategory>
-	<totalAmountDue>0.00€</totalAmountDue>
+	<totalAmountDue>0,00€</totalAmountDue>
 </reservation>

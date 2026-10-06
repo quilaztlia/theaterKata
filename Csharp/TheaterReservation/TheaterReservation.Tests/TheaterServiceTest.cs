@@ -17,8 +17,9 @@ namespace TheaterReservation.Tests
             Performance performance = new Performance();
             performance.id = 1L;
             performance.play = "The CICD by Corneille";
-            performance.startTime = new DateTime(2023, 04, 22, 21, 0, 0);
+            performance.startTime = new DateTime(2026, 11, 28, 13, 0, 0);
             performance.performanceNature = "PREMIERE";
+
             String reservation = theaterService.reservation(1L, 4, "STANDARD",
                 performance);
             Approvals.Verify(reservation);
@@ -30,26 +31,9 @@ namespace TheaterReservation.Tests
             Performance performance = new Performance();
             performance.id = 1L;
             performance.play = "The CICD by Corneille";
-            performance.startTime = new DateTime(2023, 04, 22, 21, 0, 0);
+            performance.startTime = new DateTime(2026, 11, 22, 13, 0, 0);
             performance.performanceNature = "PREMIERE";
             String reservation = theaterService.reservation(1L, 4, "PREMIUM",
-                performance);
-            Approvals.Verify(reservation);
-        }
-
-        [TestMethod]
-        public void cancel_then_reserve_on_premiere_performance_with_standard_category()
-        {
-            Performance performance = new Performance();
-            performance.id = 1L;
-            performance.play = "The CICD by Corneille";
-            performance.startTime = new DateTime(2023, 04, 22, 21, 0, 0);
-            performance.performanceNature = "PREMIERE";
-            String reservation1 = theaterService.reservation(1L, 1, "STANDARD",
-                performance);
-            List<string> seats = new List<string> { "B2" };
-            theaterService.cancelReservation("123456", 1L, seats);
-            String reservation = theaterService.reservation(1L, 4, "STANDARD",
                 performance);
             Approvals.Verify(reservation);
         }
@@ -96,5 +80,24 @@ namespace TheaterReservation.Tests
                 performance);
             Approvals.Verify(reservation);
         }
+
+        [TestMethod]
+        public void cancel_then_reserve_on_premiere_performance_with_standard_category()
+        {
+            Performance performance = new Performance();
+            performance.id = 1L;
+            performance.play = "The CICD by Corneille";
+            performance.startTime = new DateTime(2023, 04, 22, 21, 0, 0);
+            performance.performanceNature = "PREMIERE";
+            String reservation1 = theaterService.reservation(1L, 1, "STANDARD",
+                performance);
+            List<string> seats = new List<string> { "B2" };
+            theaterService.cancelReservation("123456", 1L, seats);
+            String reservation = theaterService.reservation(1L, 4, "STANDARD",
+                performance);
+            Approvals.Verify(reservation);
+        }        
+
+
     }
 }
