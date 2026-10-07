@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Include=".github\ddd-legacy-refactoring.md" />
+    <None Include=".github\golden-master-characterization.md" />
+  </ItemGroup>
+
 </Project>

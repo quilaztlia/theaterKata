@@ -1,0 +1,7 @@
+1. General DDD refactoring 
+analyse the methofe reservation in the class TheaterService with the ddd legacy refactoring skill
+
+2. Golden Master creation
+analyse the methofe reservation in the class TheaterService with the golden master caracterization skill 
+and propose a list of tests in a golden-tests file in the project TheatherReservation.Test. 
+Explore all the paths of reservation methode and propose a test for all paths.
