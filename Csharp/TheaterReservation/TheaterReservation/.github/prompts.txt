@@ -1,3 +1,10 @@
+First DDD-refactoring: write a skill dm to vs 2026 to refactoring DDD oriented a legacy code
+Golden Master Promt: act as expert software craf senior engineer. creat a copilot skill to create a golden master for un untested legacy code
+Refactoring Prompt: act a senior software craft engineer. expert on DDD and TDD. create github skill to refactoring a legacy code. code has approval tests. First analyse then find in order ValueObjects, then Agreagate Roots. For each of then propose a liste of potential refactoring explain your logic and refacto one by one using TDD
+Refactoring with DDD: act a senior software craft engineer. expert on DDD and TDD. create github skill to refactoring a legacy code. code has approval tests. First analyse then find in order ValueObjects, then Agreagate Roots. For each of then propose a liste of potential refactoring explain your logic and refacto one by one using TDD. 
+		You can improve this prompt: First DDD-refactoring
+		
+==================================================================================================
 1. General DDD refactoring 
 analyse the methofe reservation in the class TheaterService with the ddd legacy refactoring skill
 
