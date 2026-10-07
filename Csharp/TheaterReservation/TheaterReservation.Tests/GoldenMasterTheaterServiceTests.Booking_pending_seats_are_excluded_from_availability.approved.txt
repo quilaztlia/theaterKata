@@ -1,0 +1,28 @@
+﻿<reservation>
+	<performance>
+		<play>Play</play>
+		<date>22/04/2023 21:00:00</date>
+	</performance>
+	<reservationId>123457</reservationId>
+	<reservationStatus>FULFILLABLE</reservationStatus>
+		<seats>
+			<seat>
+				<id>C1</id>
+				<category>STANDARD</category>
+			</seat>
+			<seat>
+				<id>C2</id>
+				<category>STANDARD</category>
+			</seat>
+			<seat>
+				<id>C3</id>
+				<category>STANDARD</category>
+			</seat>
+			<seat>
+				<id>C4</id>
+				<category>STANDARD</category>
+			</seat>
+		</seats>
+	<seatCategory>STANDARD</seatCategory>
+	<totalAmountDue>92,40€</totalAmountDue>
+</reservation>

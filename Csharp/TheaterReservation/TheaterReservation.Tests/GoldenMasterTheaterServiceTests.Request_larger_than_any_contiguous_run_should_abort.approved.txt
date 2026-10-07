@@ -1,0 +1,10 @@
+﻿<reservation>
+	<performance>
+		<play>Play</play>
+		<date>28/11/2026 13:00:00</date>
+	</performance>
+	<reservationId>123465</reservationId>
+	<reservationStatus>ABORTED</reservationStatus>
+	<seatCategory>STANDARD</seatCategory>
+	<totalAmountDue>0,00€</totalAmountDue>
+</reservation>
